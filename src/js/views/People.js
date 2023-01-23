@@ -28,9 +28,7 @@ const People = () => {
                     className='fas fa-heart btn fav-btn'
                     >     
                     </button>
-                   
                  </div>
-                
             </div>
         )
 

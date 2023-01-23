@@ -2,18 +2,26 @@ import React from "react";
 import { Context } from "../store/appContext";
 
 
+
 const Favorites =() => {
 
     const {store, actiona } = useContext(Context)
 
     const favList = store.favorites.map((fav) => {
-        return {
-            
-        }
+        return (
+            <li key={fav.name}>
+                {fav.name}
+            </li>
+        )
     })
 
+   
     return (
-        <div>This is the favorites</div>
+        <div>
+            <ul>
+                {favList}
+            </ul>
+        </div>
     )
 }
 

@@ -4,9 +4,10 @@ const getState = ({ getStore, getActions, setStore }) => {
       people: [],
       planets: [],
       vehicles: [],
-	  favorites: [],
+	    favorites: [],
 
     },
+    
     actions: {
       getPeople: () => {
         fetch("https://swapi.dev/api/people/")
